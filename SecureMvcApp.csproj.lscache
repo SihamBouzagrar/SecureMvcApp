@@ -89,8 +89,12 @@ Areas/Identity/Pages/Account/
  ResetPassword.cshtml.cs
  ResetPasswordConfirmation.cshtml.cs
 Areas/Identity/Pages/Error.cshtml.cs
-Controllers/HomeController.cs
-Data/ApplicationDbContext.cs
+Controllers/
+ AdminController.cs
+ HomeController.cs
+Data/
+ ApplicationDbContext.cs
+ RoleSeeder.cs
 Migrations/
  20260515071805_AddIdentityTables.cs
  20260515071805_AddIdentityTables.Designer.cs
@@ -416,6 +420,8 @@ Program.cs
  azure.core/1.47.1/lib/net8.0/Azure.Core.dll
  azure.identity/1.14.2/lib/net8.0/Azure.Identity.dll
  humanizer.core/2.14.1/lib/net6.0/Humanizer.dll
+ microsoft.aspnetcore.authentication.facebook/10.0.8/lib/net10.0/Microsoft.AspNetCore.Authentication.Facebook.dll
+ microsoft.aspnetcore.authentication.google/10.0.8/lib/net10.0/Microsoft.AspNetCore.Authentication.Google.dll
  microsoft.aspnetcore.identity.entityframeworkcore/10.0.8/lib/net10.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
  microsoft.aspnetcore.identity.ui/10.0.8/lib/net10.0/Microsoft.AspNetCore.Identity.UI.dll
  microsoft.aspnetcore.razor.language/6.0.24/lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll
@@ -569,15 +575,16 @@ Areas/Identity/Pages/
  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
-Views/Home/
- Index.cshtml
- Privacy.cshtml
-Views/Shared/
- Error.cshtml
- _Layout.cshtml
- _LoginPartial.cshtml
- _ValidationScriptsPartial.cshtml
 Views/
+ Admin/Index.cshtml
+ Home/
+  Index.cshtml
+  Privacy.cshtml
+ Shared/
+  Error.cshtml
+  _Layout.cshtml
+  _LoginPartial.cshtml
+  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
 
@@ -625,14 +632,15 @@ Areas/Identity/Pages/
  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
-Views/Home/
- Index.cshtml
- Privacy.cshtml
-Views/Shared/
- Error.cshtml
- _Layout.cshtml
- _LoginPartial.cshtml
- _ValidationScriptsPartial.cshtml
 Views/
+ Admin/Index.cshtml
+ Home/
+  Index.cshtml
+  Privacy.cshtml
+ Shared/
+  Error.cshtml
+  _Layout.cshtml
+  _LoginPartial.cshtml
+  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml

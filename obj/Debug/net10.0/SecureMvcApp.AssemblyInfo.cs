@@ -11,10 +11,11 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("7a77d830-4f98-40d2-b14a-dabb71ca6a06")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SecureMvcApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3effb14ce10792f5257026abe8254377c5664d6f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1eafbf770f0d45555be2038376def00d9c3786d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("SecureMvcApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SecureMvcApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
