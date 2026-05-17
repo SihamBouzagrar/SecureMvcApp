@@ -55,6 +55,7 @@ It includes:
 ---
 
 ## 🏗️ Project Architecture
+
 SecureMvcApp/
 │
 ├── Controllers
@@ -97,17 +98,21 @@ SecureMvcApp/
 ```bash
 git clone https://github.com/your-username/SecureMvcApp.git
 cd SecureMvcApp
-2️⃣ Configure database
+
+### 2️⃣ Configure database
 
 Update appsettings.json:
 
 "ConnectionStrings": {
   "DefaultConnection": "Server=.;Database=SecureMvcDB;Trusted_Connection=True;TrustServerCertificate=True;"
 }
-3️⃣ Run migrations
+
+### 3️⃣ Run migrations
+
 dotnet ef migrations add InitialCreate
 dotnet ef database update
-4️⃣ Run project
+
+###4️⃣ Run project
 dotnet run
 
 👩‍💻 Author
