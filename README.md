@@ -82,6 +82,8 @@ SecureMvcApp/
 
 ---
 
+---
+
 ## 🛠️ Tech Stack
 
 - ⚙️ ASP.NET Core MVC (.NET 6/7/8)
