@@ -1,0 +1,44 @@
+@model IEnumerable<SecureMvcApp.Models.Event>
+
+@{
+    ViewData["Title"] = "Liste des événements";
+}
+
+<h2>Liste des événements</h2>
+
+@if (User.IsInRole("Admin"))
+{
+    <a class="btn btn-success mb-3" href="/Admin/Create">
+        + Créer un événement
+    </a>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Date</th>
+            <th>Lieu</th>
+            <th>Places</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Date.ToString("dd/MM/yyyy")</td>
+                <td>@item.Lieu</td>
+                <td>@item.NombrePlaces</td>
+                <td>
+                    <a class="btn btn-primary btn-sm"
+                       href="/Events/Details/@item.Id">
+                        Détails
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

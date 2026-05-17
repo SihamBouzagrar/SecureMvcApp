@@ -1,0 +1,44 @@
+@model SecureMvcApp.Models.Event
+<div class="container mt-4">
+
+    <div class="card card-event p-4">
+
+        <h2 class="fw-bold">@Model.Title</h2>
+
+        <hr />
+
+        <p>📅 <strong>Date :</strong> @Model.Date.ToString("dd/MM/yyyy")</p>
+        <p>📍 <strong>Lieu :</strong> @Model.Lieu</p>
+
+        <p>
+            🎟️ <strong>Places disponibles :</strong>
+            @Model.NombrePlaces
+        </p>
+
+        <p>
+            👥 <strong>Inscriptions :</strong>
+            @Model.Inscriptions?.Count()
+        </p>
+
+        <hr />
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <form method="post" action="/Events/Register">
+                <input type="hidden" name="eventId" value="@Model.Id" />
+
+                <button class="btn btn-success w-100">
+                    ✔ S’inscrire à l’événement
+                </button>
+            </form>
+        }
+        else
+        {
+            <div class="alert alert-warning">
+                Connecte-toi pour t’inscrire
+            </div>
+        }
+
+    </div>
+
+</div>

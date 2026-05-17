@@ -1,0 +1,39 @@
+@model SecureMvcApp.Models.Event
+
+<div class="container mt-4">
+
+    <div class="card card-event p-4">
+
+        <h2 class="fw-bold mb-3">➕ Créer un événement</h2>
+
+       <form asp-controller="Admin" asp-action="Create" method="post">
+
+            <div class="mb-3">
+                <label class="form-label">Titre</label>
+                <input asp-for="Title" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date</label>
+                <input asp-for="Date" type="date" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Lieu</label>
+                <input asp-for="Lieu" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre de places</label>
+                <input asp-for="NombrePlaces" type="number" class="form-control" />
+            </div>
+
+            <button class="btn btn-primary w-100">
+                Créer l’événement
+            </button>
+
+        </form>
+
+    </div>
+
+</div>

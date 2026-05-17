@@ -91,6 +91,7 @@ Areas/Identity/Pages/Account/
 Areas/Identity/Pages/Error.cshtml.cs
 Controllers/
  AdminController.cs
+ EventsController.cs
  HomeController.cs
 Data/
  ApplicationDbContext.cs
@@ -98,8 +99,17 @@ Data/
 Migrations/
  20260515071805_AddIdentityTables.cs
  20260515071805_AddIdentityTables.Designer.cs
+ 20260517165849_InitialCreate.cs
+ 20260517165849_InitialCreate.Designer.cs
+ 20260517174014_CleanModel.cs
+ 20260517174014_CleanModel.Designer.cs
+ 20260517174407_Init.cs
+ 20260517174407_Init.Designer.cs
  ApplicationDbContextModelSnapshot.cs
-Models/ErrorViewModel.cs
+Models/
+ ErrorViewModel.cs
+ Event.cs
+ Inscription.cs
 obj/Debug/net10.0/
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  SecureMvcApp.AssemblyInfo.cs
@@ -575,16 +585,21 @@ Areas/Identity/Pages/
  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
+Views/Admin/
+ Create.cshtml
+ Index.cshtml
+Views/Events/
+ Details.cshtml
+ Index.cshtml
+Views/Home/
+ Index.cshtml
+ Privacy.cshtml
+Views/Shared/
+ Error.cshtml
+ _Layout.cshtml
+ _LoginPartial.cshtml
+ _ValidationScriptsPartial.cshtml
 Views/
- Admin/Index.cshtml
- Home/
-  Index.cshtml
-  Privacy.cshtml
- Shared/
-  Error.cshtml
-  _Layout.cshtml
-  _LoginPartial.cshtml
-  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
 
@@ -632,8 +647,11 @@ Areas/Identity/Pages/
  _ValidationScriptsPartial.cshtml
  _ViewImports.cshtml
  _ViewStart.cshtml
+Views/Admin/
+ Create.cshtml
+ Index.cshtml
 Views/
- Admin/Index.cshtml
+ Events/Details.cshtml
  Home/
   Index.cshtml
   Privacy.cshtml
