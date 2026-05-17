@@ -58,26 +58,27 @@ It includes:
 
 SecureMvcApp/
 │
-├── Controllers
-│ ├── AdminController.cs
-│ ├── EventsController.cs
+├── Controllers/
+│   ├── AdminController.cs
+│   ├── EventsController.cs
 │
-├── Models
-│ ├── Event.cs
-│ ├── Inscription.cs
+├── Models/
+│   ├── Event.cs
+│   ├── Inscription.cs
 │
-├── Data
-│ ├── ApplicationDbContext.cs
+├── Data/
+│   ├── ApplicationDbContext.cs
 │
-├── Views
-│ ├── Admin
-│ │ ├── Index.cshtml
-│ │ ├── Create.cshtml
-│ ├── Events
-│ ├── Index.cshtml
-│ ├── Details.cshtml
+├── Views/
+│   ├── Admin/
+│   │   ├── Index.cshtml
+│   │   ├── Create.cshtml
+│   │
+│   ├── Events/
+│       ├── Index.cshtml
+│       ├── Details.cshtml
 │
-└── Program.cs
+├── Program.cs
 
 ---
 
